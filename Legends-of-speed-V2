@@ -178,36 +178,12 @@ end
 end)
 
 local ExampleToggle13 = Groupbox3:CreateToggle("Auto-Farm-Gem-Orbs", function(state)
-    getgenv().GenMagma = state
+    getgenv().GemMagma = state
     while true do
         if not getgenv().GemMagma then return end
         wait()
         game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City") game:GetService('ReplicatedStorage').rEvents.orbEvent:FireServer("collectOrb", "Gem", "Magma City")
     end
-end)
-
-game.ReplicatedStorage.raceInProgress.Changed:Connect(function(state)
-	if not getgenv().AutoRace then return end
-	if state then
-		game.ReplicatedStorage.rEvents.raceEvent:FireServer('joinRace')
-		wait()
-		player.PlayerGui.gameGui.raceJoinLabel.Visible = false
-	end
-end)
-game.ReplicatedStorage.raceStarted.Changed:Connect(function(state)
-	if not getgenv().AutoRace then return end
-	if state then
-		for i, v in pairs(workspace.raceMaps:GetChildren()) do
-			local oldFinishPosition = v.finishPart.CFrame
-			v.finishPart.CFrame = player.Character.HumanoidRootPart.CFrame
-			wait()
-			v.finishPart.CFrame = oldFinishPosition
-		end
-	end
-end)
-
-local ExampleToggle13 = Groupbox4:CreateToggle('Auto-Win-Race', function(state)
-	getgenv().AutoRace = state
 end)
 
 local ExampleToggle13 = Groupbox4:CreateToggle('Auto-Join-Race ', function(state)
@@ -220,6 +196,30 @@ local args = {
   }
   game:GetService("ReplicatedStorage").rEvents.raceEvent:FireServer(unpack(args))
 end
+end)
+
+game.ReplicatedStorage.raceInProgress.Changed:Connect(function(state)
+    if not getgenv().AutoWinRace then return end
+    if state then
+        game.ReplicatedStorage.rEvents.raceEvent:FireServer('joinRace')
+        wait()
+        player.PlayerGui.gameGui.raceJoinLabel.Visible = false
+    end
+end)
+game.ReplicatedStorage.raceStarted.Changed:Connect(function(state)
+    if not getgenv().AutoWinRace then return end
+    if state then
+        for i, v in pairs(workspace.raceMaps:GetChildren()) do
+            local oldFinishPosition = v.finishPart.CFrame
+            v.finishPart.CFrame = player.Character.HumanoidRootPart.CFrame
+            wait()
+            v.finishPart.CFrame = oldFinishPosition
+        end
+    end
+end)
+
+local ExampleToggle13 = Groupbox4:CreateToggle('Auto-Win-Race', function(state)
+    getgenv().AutoWinRace = state
 end)
 
 local ExampleToggle13 = Groupbox4:CreateToggle('Auto-Win-1st-2nd-3rd ', function(state)
@@ -423,15 +423,6 @@ end)
 
 local ExampleToggle = Player:CreateButton("Made by XxAhmadxX", function(value)
     print(value)
-end)
-
-
-
-
-Settings:AddButton('Destroy UI', function()
-    ui.gui:Destroy()
-    outerSpaceBindable:Destroy()
-    speedDesertBindable:Destroy()
 	getgenv().Red = false
     getgenv().Yellow = false
     getgenv().Blue = false
@@ -446,6 +437,7 @@ Settings:AddButton('Destroy UI', function()
     getgenv().YellowMagma = false
     getgenv().BlueMagma = false
     getgenv().OrangeMagma = false
+    getgenv().GemMagma = false
     getgenv().AutoJoinRace = false
     getgenv().RaceTop = false
     getgenv().AutoHoops = false
@@ -459,13 +451,5 @@ Settings:AddButton('Destroy UI', function()
     getgenv().AutoInferno = false
     getgenv().AutoLava = false
     getgenv().AutoElectroLegends = false
-    getgenv().AutoRace = false
+    getgenv().AutoWinRace = false
 end)
-
-
-
-
-
-
-
-
