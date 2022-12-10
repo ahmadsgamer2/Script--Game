@@ -13,3 +13,6 @@ end
 if game.PlaceId == 8507479511 then -- Higher Jump Every Second
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Higher-Jump-Every-Second"))()
 end
+if game.PlaceId == 11063612131 then -- Every Second You Get +1 Jump Power
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Every-Second-You-Get-%2B1-Jump-Power"))()
+end
