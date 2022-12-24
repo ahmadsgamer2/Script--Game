@@ -16,3 +16,6 @@ end
 if game.PlaceId == 11063612131 then -- Every Second You Get +1 Jump Power
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Every-Second-You-Get-%2B1-Jump-Power"))()
 end
+if game.PlaceId == 6679968919 then -- Fly Race
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Fly-Race"))()
+end
