@@ -5,7 +5,7 @@ if game.PlaceId == 3623096087 then -- Muscle legends
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends"))()
 end
 if game.PlaceId == 3956818381 then -- Ninja Legends
-  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends"))()
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Ninja-Legends"))()
 end
 if game.PlaceId == 9834528893 then -- +1 Jump Every Second
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/%2B1-Jump-Every-Second"))()
