@@ -1,6 +1,12 @@
 if game.PlaceId == 3101667897 then -- legends Of Speed
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Legends-of-speed"))()
 end
+if game.PlaceId == 3232996272 then -- Space legends Of Speed
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Legends-of-speed"))()
+end
+if game.PlaceId == 3276265788 then -- Desert legends Of Speed
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Legends-of-speed"))()
+end
 if game.PlaceId == 3623096087 then -- Muscle legends
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Muscle-Legends"))()
 end
