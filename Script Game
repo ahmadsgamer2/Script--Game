@@ -28,4 +28,6 @@ end
 if game.PlaceId == 2753915549 then -- Blox Fruit
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Blox-Fruit"))()
 end
-
+if game.PlaceId == 6516141723 then -- Doors
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Doors"))()
+end
