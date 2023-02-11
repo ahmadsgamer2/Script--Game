@@ -25,7 +25,13 @@ end
 if game.PlaceId == 6679968919 then -- Fly Race
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Fly-Race"))()
 end
-if game.PlaceId == 2753915549 then -- Blox Fruit
+if game.PlaceId == 2753915549 then -- Blox Fruit OLD Worlds
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Blox-Fruit"))()
+end
+if game.PlaceId == 4442272183 then -- Blox Fruit v1 worlds
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Blox-Fruit"))()
+end
+if game.PlaceId == 7449423635 then -- Blox Fruit v2 worlds
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Blox-Fruit"))()
 end
 if game.PlaceId == 6516141723 then -- Doors
