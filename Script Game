@@ -37,3 +37,8 @@ end
 if game.PlaceId == 6516141723 then -- Doors
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Doors"))()
 end
+f game.PlaceId == 6839171747 then -- Doors
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Doors"))()
+end
+
+
