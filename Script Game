@@ -44,4 +44,8 @@ if game.PlaceId == 920587237 then -- Adopt Me
   loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Adopt-Me"))()
 end
 
+-----------------------------------------
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/ahmadsgamer2/main/WHYJINE"))() -- Shindo Life
+-----------------------------------------
+
 
