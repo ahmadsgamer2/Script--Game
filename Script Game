@@ -1,1 +1,1 @@
-loadstring(game:HttpGetAsync("https://gitlab.com/aallaham014/speed-hub-x-loader/-/raw/main/Loader-SpeedHubX"))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
