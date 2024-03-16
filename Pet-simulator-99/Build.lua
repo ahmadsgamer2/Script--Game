@@ -1,4 +1,3 @@
-local function BuildPS99()
     local SpeedLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubLib_V2/Library.lua"))()
     local Window = SpeedLib:MakeWindow({Title = "Speed Hub X | ".._G.Version,SubTitle = "by : AhmadV10",LoadText = "Speed Hub X",Flags = "Speed Hub X | PS99.lua"});
     Window:AddMinimizeButton({Button = {Image = "rbxassetid://16022917595"},UICorner = {true,CornerRadius = UDim.new(0.5, 0)},UIStroke = {false, {}}})
@@ -33,4 +32,3 @@ local function BuildPS99()
     Eggs:AddSlider({Name = "Amount Egg",MinValue = 1,MaxValue = 100,Default = 1,Increase = 1,Callback = function(value) getgenv().EggsA = value end})
     Eggs:AddSlider({Name = "Auto Open Eggs Delay",MinValue = 0,MaxValue = 100,Default = 0,Increase = 1,Callback = function(value) getgenv()["Auto Open Eggs Delay"] = value end})
     Eggs:AddToggle({Name = "Auto Open Eggs",Default = false,Callback = function(value)task.spawn(function()getgenv().AutoOpenEggs = value AutoOpenEggs("AutoOpenEggs")end) end})
-end
